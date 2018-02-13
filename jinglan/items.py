@@ -12,17 +12,16 @@ class JinglanItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     # 小说的名字
-    name = scrapy.Field
+    name = scrapy.Field()
     # 作者
-    author = scrapy.Field
+    author = scrapy.Field()
     # 小说地址
-    novelurl = scrapy.Field
+    novelurl = scrapy.Field()
     # 状态
-    serialstatus = scrapy.Field
+    serialstatus = scrapy.Field()
     # 连载字数
-    serialnumber = scrapy.Field
+    serialnumber = scrapy.Field()
     # 文章类别
-    category = scrapy.Field
+    category = scrapy.Field()
     # 小说编号
-    name_id = scrapy.Field
-    pass
+    name_id = scrapy.Field()

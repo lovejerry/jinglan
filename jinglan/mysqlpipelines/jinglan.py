@@ -15,5 +15,5 @@ class JinglanPipeline(object):
                 xs_name = item['name']
                 xs_author = item['author']
                 category = item['category']
-                Sql.inset_dd_name(xs_name, xs_author, category, name_id)
+                Sql.inset_book_info(xs_name, xs_author, category, name_id)
                 print('开始存小说标题')

@@ -12,8 +12,8 @@ cur = cnx.cursor(buffered=True)
 
 class Sql:
     @classmethod
-    def inset_dd_name(cls, xs_name, xs_author, category, name_id):
-        sql = 'INSERT INTO dd_name(`xs_name`, `xs_author`, `category`, `name_id`) VALUES (%(xs_name)s, %(xs_author)s, %(category)s, %(name_id)s)'
+    def inset_book_info(cls, xs_name, xs_author, category, name_id):
+        sql = 'INSERT INTO book_info(`xs_name`, `xs_author`, `category`, `name_id`) VALUES (%(xs_name)s, %(xs_author)s, %(category)s, %(name_id)s)'
         value = {
             'xs_name': xs_name,
             'xs_author': xs_author,
@@ -25,7 +25,7 @@ class Sql:
 
     @classmethod
     def select_name(cls, name_id):
-        sql = "SELECT EXISTS(SELECT 1 FROM dd_name WHERE name_id=%(name_id)s)"
+        sql = "SELECT EXISTS(SELECT 1 FROM book_info WHERE name_id=%(name_id)s)"
         value = {
             'name_id':name_id
         }

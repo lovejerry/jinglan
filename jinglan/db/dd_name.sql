@@ -18,10 +18,10 @@ SET NAMES utf8mb4;
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for dd_name
+-- Table structure for book_info
 -- ----------------------------
-DROP TABLE IF EXISTS `dd_name`;
-CREATE TABLE `dd_name`  (
+DROP TABLE IF EXISTS `book_info`;
+CREATE TABLE `book_info`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `xs_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `xs_author` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,

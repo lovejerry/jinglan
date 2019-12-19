@@ -91,9 +91,9 @@ ROBOTSTXT_OBEY = True
 
 MYSQL_HOSTS = '127.0.0.1'
 MYSQL_USER = 'root'
-MYSQL_PASSWORD = 'passw0rd'
+MYSQL_PASSWORD = 'psw@21'
 MYSQL_PORT = '3306'
-MYSQL_DB = 'xiaoshuo'
+MYSQL_DB = 'python3_spider_xiaoshuo'
 
 ITEM_PIPELINES = {
     'jinglan.mysqlpipelines.jinglan.JinglanPipeline': 1,

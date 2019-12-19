@@ -2,11 +2,15 @@ import re
 import scrapy
 from bs4 import BeautifulSoup
 from scrapy.http import Request
+
+from jinglan.conf import conf
 from jinglan.items import JinglanItem
 
 
 class Myspider(scrapy.Spider):
-    name = 'jinglan'
+    name = conf.PROJECT_NAME
+
+    # name = 'jinglan'
     allowed_domains = ['23wx.cc']
     bash_url = 'http://23wx.cc/class/'
     bashurl = '.html'
